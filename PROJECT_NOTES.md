@@ -1,7 +1,7 @@
 # Martian Gothic .gfx <-> PNG converter — project notes
 
 Reverse-engineering the proprietary `.gfx` texture format used by *Martian
-Gothic: Unification* (Xplosive rerelease), and building `gfx_png_convert.py`
+Gothic: Unification*, and building `gfx_png_convert.py`
 to convert files losslessly to/from PNG for modding.
 
 ## Container format
@@ -113,14 +113,6 @@ byte-perfect round trip after the vstack/grid fix above.
   assuming a bug - this has repeatedly turned out to be stale/cached
   downloads on the user's end, not actual data problems.
 
-## Testing workflow
-
-User has requested **not** doing the full ~30-file regression sweep for
-small/targeted changes anymore (token cost) - just test the specific
-file(s) affected by a change, plus a quick sanity check of anything
-structurally adjacent (e.g. when changing the grid-packing threshold,
-spot-check that files just under the old threshold and just over the new
-one still behave as expected).
 
 Round-trip test pattern:
 ```python
