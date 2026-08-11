@@ -1,8 +1,5 @@
-# Martian Gothic .gfx <-> PNG converter — project notes
-
-Reverse-engineering the proprietary `.gfx` texture format used by *Martian
-Gothic: Unification*, and building `gfx_png_convert.py`
-to convert files losslessly to/from PNG for modding.
+# Martian-Gothic-Unification---GFX-file-converter
+Python .PY script tool to convert GFX-files of Martian Gothic: Unification into PNG and back to GFX.
 
 ## Container format
 
@@ -120,5 +117,3 @@ a = open('original.gfx','rb').read()
 b = open('rebuilt.gfx','rb').read()
 assert a == b  # or diff and confirm only expected bytes differ
 ```
-# Martian-Gothic-Unification---GFX-file-converter
-Python .PY script tool to convert GFX-files of Martian Gothic: Unification into PNG and back to GFX.
