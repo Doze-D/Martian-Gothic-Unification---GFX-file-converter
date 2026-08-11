@@ -1,6 +1,10 @@
 # Martian-Gothic-Unification---GFX-file-converter
 Python .PY script tool to convert GFX-files of Martian Gothic: Unification into PNG and back to GFX.
 
+NOTE: Created with Claude AI, Sonett v5 model, tested by me.
+
+Feel free to give feedback, suggestions and even fork this further.
+
 ## Container format
 
 ```
